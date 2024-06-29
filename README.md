@@ -2,7 +2,7 @@
 
 Este repositorio contiene una implementación de Árboles Binarios de Búsqueda (BST) en Java, con explicaciones conceptuales, diagramas ilustrativos y código funcional.
 
-![Árbol Binario de Búsqueda](https://github.com/FernandoHuilca/Arboles_Binarios_de_Busqueda/assets/134117009/2045c092-6e79-4c00-ad22-709a2bee06f5)
+![Árbol Binario de Búsqueda](https://github.com/FernandoHuilca/Arboles_Binarios_de_Busqueda/assets/134117009/c3a44805-e8c2-42af-8c52-80b5560af429)
 
 ## Tabla de Contenidos
 
@@ -38,8 +38,8 @@ A continuación se muestran algunos diagramas que ilustran la estructura y las o
 
 <table>
   <tr>
-    <td><img src="https://github.com/FernandoHuilca/Arboles_Binarios_de_Busqueda/assets/134117009/2045c092-6e79-4c00-ad22-709a2bee06f5"></td>
-    <td><img src="https://github.com/FernandoHuilca/Arboles_Binarios_de_Busqueda/assets/134117009/2045c092-6e79-4c00-ad22-709a2bee06f5" alt="Diagrama 2"></td>
+    <td><img src="https://github.com/FernandoHuilca/Arboles_Binarios_de_Busqueda/assets/134117009/3d40fe49-f205-4c60-88c7-5fba877c8612"></td>
+    <td><img src="https://github.com/FernandoHuilca/Arboles_Binarios_de_Busqueda/assets/134117009/f662e4cb-1c17-4784-9b28-828f513b355e" alt="Diagrama 2"></td>
   </tr>
 </table>
 
@@ -47,21 +47,12 @@ A continuación se muestran algunos diagramas que ilustran la estructura y las o
 
 El código fuente se encuentra en la carpeta `src` e incluye las siguientes funcionalidades:
 
-1. **Insertar Nodo**
-2. **Eliminar Nodo**
-3. **Buscar Nodo**
-4. **Recorridos de Árbol**: Inorden, Preorden, Postorden
+1. **CrearÁrbolBinario**
+3. **Eliminar Nodo**
+4. **Buscar Nodo**
+5. **Insertar Nodo** 
+6. **Mostrar árbol**
 
-### Ejemplos de Uso
-
-#### Insertar un Nodo
-
-```java
-ArbolBinarioDeBusqueda arbol = new ArbolBinarioDeBusqueda();
-arbol.insertar(10);
-arbol.insertar(5);
-arbol.insertar(15);
-```
 
 ### Autores
 [@FernandoHuilca](https://github.com/FernandoHuilca)
