@@ -8,6 +8,8 @@ public class Main {
         /**
          * @author Sebastián Ramos, Fernando Huilca, Juan Mateo Quisilema
          */
+
+        ÁrbolBinarioDeBúsqueda árbolBinarioDeBúsqueda = new ÁrbolBinarioDeBúsqueda();
         int opcion;
         do {
             opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
@@ -26,17 +28,27 @@ public class Main {
                             "0)  SALIR\n\n"));
             switch (opcion) {
                 case 1:
+                    árbolBinarioDeBúsqueda.crearÁrbol();
+                    JOptionPane.showMessageDialog(null, "El árbol binario ha quedado de la siguiente manera: \n " + árbolBinarioDeBúsqueda);
                     break;
                 case 2:
+                    int infoABuscar = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese la info que se desea buscar"));
+                    árbolBinarioDeBúsqueda.buscarNodoDentroDelÁrbol(árbolBinarioDeBúsqueda.getRaíz(), infoABuscar);
                     break;
                 case 3:
+                    árbolBinarioDeBúsqueda.agregarNodosAlÁrbolBB();
+                    JOptionPane.showMessageDialog(null, "El árbol binario ha quedado de la siguiente manera: \n " + árbolBinarioDeBúsqueda);
                     break;
                 case 4:
+                    int infoAEliminar = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese la info que se desea Eliminar"));
+                    árbolBinarioDeBúsqueda.borrarABB(infoAEliminar);
+                    JOptionPane.showMessageDialog(null, "El árbol binario ha quedado de la siguiente manera: \n " + árbolBinarioDeBúsqueda);
                     break;
                 case 5:
+                    JOptionPane.showMessageDialog(null, "El árbol binario es el siguiente: \n " + árbolBinarioDeBúsqueda);
                     break;
                 case 0:
-                    JOptionPane.showMessageDialog(null, "FIN DEL PROGRAMA.");
+                    JOptionPane.showMessageDialog(null, "FIN DEL PROGRAMA, gracias por usarlo bb :D.");
                     break;
                 default:
                     JOptionPane.showMessageDialog(null, "ERROR DESCONOCIDO.");
