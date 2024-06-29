@@ -2,30 +2,24 @@ import javax.swing.JOptionPane;
 
 public class Main {
     public static void main(String[] args) {
-        /**
-         * Menu principal para acceder a cada operation en Árboles binarios de búsqueda
-         */
-        /**
-         * @author Sebastián Ramos, Fernando Huilca, Juan Mateo Quisilema
-         */
-
+        // Sebastián Ramos, Fernando Huilca, Juan Mateo Quisilema
         ÁrbolBinarioDeBúsqueda árbolBinarioDeBúsqueda = new ÁrbolBinarioDeBúsqueda();
         int opcion;
         do {
             opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
                     " _______________ ELIJA UNA OPERACIÓN ÁRBOLES BINARIOS DE BÚSQUEDA _______________ \n\n" +
 
-                            "1)  CREACIÓN DEL ÁRBOL BINARIO \n\n" +
+                            "                                              1)  CREACIÓN DEL ÁRBOL BINARIO \n\n" +
 
-                            "2)  BUSCAR DENTRO DEL ÁRBOL\n\n" +
+                            "                                              2)  BUSCAR DENTRO DEL ÁRBOL\n\n" +
 
-                            "3)  INSERTAR EN EL ÁRBOL\n\n" +
+                            "                                              3)  INSERTAR EN EL ÁRBOL\n\n" +
 
-                            "4)  ELIMINAR ALGÚN ELEMENTO\n\n" +
+                            "                                              4)  ELIMINAR ALGÚN ELEMENTO\n\n" +
 
-                            "5)  VER ÁRBOL BINARIO\n\n" +
+                            "                                              5)  VER ÁRBOL BINARIO\n\n" +
 
-                            "0)  SALIR\n\n"));
+                            "                                              0)  SALIR\n\n"));
             switch (opcion) {
                 case 1:
                     árbolBinarioDeBúsqueda.crearÁrbol();
@@ -36,7 +30,8 @@ public class Main {
                     árbolBinarioDeBúsqueda.buscarNodoDentroDelÁrbol(árbolBinarioDeBúsqueda.getRaíz(), infoABuscar);
                     break;
                 case 3:
-                    árbolBinarioDeBúsqueda.agregarNodosAlÁrbolBB();
+                    int infoNuevoNodo = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese la info del nuevo nodo "));
+                    árbolBinarioDeBúsqueda.agregarNodosAlÁrbolBB(árbolBinarioDeBúsqueda.getRaíz(), new Nodo(infoNuevoNodo));
                     JOptionPane.showMessageDialog(null, "El árbol binario ha quedado de la siguiente manera: \n " + árbolBinarioDeBúsqueda);
                     break;
                 case 4:
